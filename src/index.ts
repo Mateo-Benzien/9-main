@@ -5,7 +5,7 @@
 
 const propertyContainer = document.querySelector('.properties')
 
-import { showReviewTotal, populateUser } from '../utils.ts'
+import { showReviewTotal, populateUser } from './utils.ts'
 let isOpen: boolean
 
 // Reviews
