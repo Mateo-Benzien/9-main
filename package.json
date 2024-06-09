@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s01m4go",
-  "description": "https://v2.scrimba.com/learn-typescript-c0l/~0o",
+  "name": "Scrim-s01jgtk",
+  "description": "https://v2.scrimba.com/learn-typescript-c0l/~01i",
   "scripts": {
     "watch": "webpack -w",
     "build": "webpack"
@@ -8,11 +8,12 @@
   "dependencies": {
     "build": "^0.1.4",
     "watch": "^0.13.0",
-    "webpack": "^5.6.0"
+    "webpack": "^5.6.0",
+    "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
     "ts-loader": "^9.5.1",
-    "typescript": "^5.4.5",
-    "webpack-cli": "^5.1.4"
+    "typecript": "^0.0.1-security",
+    "typescript": "*"
   }
 }
