@@ -1,25 +1,23 @@
+const path = require('path');
+
 module.exports = {
-  "output": {
-    "filename": "[name].pack.js"
+  mode: 'development',
+  entry: {
+    index: './index.ts'
   },
-  "entry": {
-    "index": "./index"
+  output: {
+    filename: '[name].pack.js',
+    path: path.resolve(__dirname, 'dist') // Ensure the output directory is 'dist'
   },
-  "resolve": {
-    "extensions": [
-      ".ts",
-      ".js",
-      ".json"
-    ]
+  resolve: {
+    extensions: ['.ts', '.js', '.json']
   },
-  "module": {
-    "rules": [
+  module: {
+    rules: [
       {
-        "use": {
-          "loader": "ts-loader"
-        },
-        "exclude": /node_modules/,
-        "test": /\.ts$/
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       }
     ]
   }
