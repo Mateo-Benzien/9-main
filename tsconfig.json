@@ -10,7 +10,7 @@
     },
     "include": [
       "src/index.ts"
-, "src/index.ts"    ],
+, "src/utils.ts" ],
     "exclude": [
       "./dist"
     ]
